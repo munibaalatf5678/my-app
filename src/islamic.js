@@ -2,7 +2,7 @@ import React from 'react';
 
 const Islamic = () => {
     return (
-        <div style={{ backgroundColor: 'grey', padding: '20px', minHeight: '100vh' }}>
+        <div style={{ backgroundImage: 'url(bg8.jpg)', padding: '20px', minHeight: '100vh' }}>
         {/* Embedded YouTube videos side by side */}
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
             {/* Left video */}

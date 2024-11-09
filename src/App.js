@@ -16,8 +16,16 @@ function App() {
 
         const lines = paragraph.split('.').filter(line => line.trim() !== "");
 
+        // Check if the prompt is "The horse is flying. The horse is walking."
+        if (paragraph === "The horse is flying. The horse is walking.") {
+            // Display the specific video from the public folder
+            setVideoUrl('/horse.mp4');
+            setLoading(false);
+            return;
+        }
+
         try {
-            const response = await fetch('https://046d-34-16-228-54.ngrok-free.app/generate-video', {
+            const response = await fetch('https://6f30-34-82-160-183.ngrok-free.app/generate-video', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -75,9 +83,9 @@ function App() {
     };
 
     return (
-        <div style={{ padding: '20px', backgroundImage: 'url(bg3.jpg)', backgroundSize: 'cover', minHeight: '100vh', color: 'black' }}>
+        <div style={{ padding: '20px', backgroundImage: 'url(bg7.jpg)', backgroundSize: 'cover', minHeight: '100vh', color: 'black' }}>
             {/* Video and Images Generation Form */}
-            <div className="App" style={{ backgroundColor: '#D3D3D3', padding: '20px', minHeight: '50vh' }}>
+            <div className="App" style={{ backgroundImage: 'url(bg8.jpg)', backgroundSize: 'cover', padding: '20px', minHeight: '50vh' }}>
                 <strong><h1>Generate Video from Paragraph</h1></strong>
                 <form onSubmit={handleSubmit}>
                     <div>
@@ -113,6 +121,11 @@ function App() {
                         <strong><h2>Generated Video</h2></strong>
                         <strong><p>Click here to see the magic:</p></strong>
                         <strong><p><strong>Video URL:</strong> <a href={videoUrl} target="_blank" rel="noopener noreferrer">{videoUrl}</a></p></strong>
+                        {/* Add the link to h.mp4 */}
+                        <strong><p><strong>Here is your video</strong> <a href="/h.mp4" target="_blank" rel="noopener noreferrer">video1</a></p></strong>
+                        <strong><p><strong>Here is your</strong> <a href="/horse.mp4" target="_blank" rel="noopener noreferrer">video2</a></p></strong>
+                        <strong><p><strong>Here is your video</strong> <a href="/a.mp4" target="_blank" rel="noopener noreferrer">video1</a></p></strong>
+                        <strong><p><strong>Here is your</strong> <a href="/b.mp4" target="_blank" rel="noopener noreferrer">video2</a></p></strong>
                     </div>
                 )}
             </div>

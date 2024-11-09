@@ -1,11 +1,18 @@
-import { TableBody } from '@mui/material'; // This import seems unused; consider removing it if not needed
 import React from 'react';
 
 const Deaf = () => {
   const styles = {
     body: {
-      backgroundColor: 'lavender', // This will be applied via the CSS file
-      minHeight: '100vh', // Ensure the body covers the full height
+      backgroundImage: 'url(bg10.jpg)',
+      
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+      minHeight: '100vh',
+      color: "white",
+      fontWeight: 'bold',
+     
+      
     },
     container: {
       display: 'flex',
@@ -30,7 +37,7 @@ const Deaf = () => {
     },
     paragraph: {
       fontSize: '1.2em',
-      color: '#555',
+      color: 'black',
     },
     reverseContainer: {
       display: 'flex',
@@ -70,11 +77,11 @@ const Deaf = () => {
   };
 
   return (
-    <div style={styles.body}> {/* Apply the body style here */}
+    <div style={styles.body}>
       {/* First Section */}
       <div style={styles.container}>
         <div style={styles.image}>
-          <img src="/deafstart.jpg" alt="Deaf Representation" style={styles.img} />
+          <img src="/deafstart.jpg" alt="Deaf community representation" style={styles.img} />
         </div>
         <div style={styles.content}>
           <h1 style={styles.heading}>Deaf Community</h1>
@@ -87,7 +94,7 @@ const Deaf = () => {
       {/* Second Section */}
       <div style={styles.reverseContainer}>
         <div style={styles.image}>
-          <img src="/deaf12.jpg" alt="Another Deaf Representation" style={styles.img} />
+          <img src="/deaf12.jpg" alt="Awareness representation" style={styles.img} />
         </div>
         <div style={styles.content}>
           <h1 style={styles.heading}>Deaf Awareness</h1>
@@ -106,10 +113,10 @@ const Deaf = () => {
 
       {/* Row of Images */}
       <div style={styles.imageRow}>
-        <img src="/deaf16.jpg" alt="Deaf Image 16" style={styles.rowImg} />
-        <img src="/deaf17.jpg" alt="Deaf Image 17" style={styles.rowImg} />
-        <img src="/deaf19.jpg" alt="Deaf Image 19" style={styles.rowImg} />
-        <img src="/deaf20.jpg" alt="Deaf Image 20" style={styles.rowImg} />
+        <img src="/deaf16.jpg" alt="Community gathering" style={styles.rowImg} />
+        <img src="/deaf17.jpg" alt="Support event" style={styles.rowImg} />
+        <img src="/deaf19.jpg" alt="Artistic expression" style={styles.rowImg} />
+        <img src="/deaf20.jpg" alt="Celebration event" style={styles.rowImg} />
       </div>
 
       {/* Separator Line */}
@@ -124,9 +131,9 @@ const Deaf = () => {
 
       {/* New Row of deaf5.jpg, deaf25.jpg, and deaf26.jpg */}
       <div style={styles.imageRow}>
-        <img src="/deaf5.jpg" alt="Deaf Image 5" style={styles.rowImg} />
-        <img src="/deaf25.jpg" alt="Deaf Image 25" style={styles.rowImg} />
-        <img src="/deaf26.jpg" alt="Deaf Image 26" style={styles.rowImg} />
+        <img src="/deaf5.jpg" alt="Cultural event" style={styles.rowImg} />
+        <img src="/deaf25.jpg" alt="Community support" style={styles.rowImg} />
+        <img src="/deaf26.jpg" alt="Personal story" style={styles.rowImg} />
       </div>
 
       {/* Separator Line */}
@@ -135,7 +142,7 @@ const Deaf = () => {
       {/* New Section with deaf8.jpg and deaf9.jpg */}
       <div style={styles.container}>
         <div style={styles.sideImages}>
-          <img src="/deaf8.jpg" alt="Deaf Image 8" style={styles.img} />
+          <img src="/deaf8.jpg" alt="Unity" style={styles.img} />
         </div>
         <div style={styles.middleParagraph}>
           <p style={styles.paragraph}>
@@ -143,7 +150,7 @@ const Deaf = () => {
           </p>
         </div>
         <div style={styles.sideImages}>
-          <img src="/deaf9.jpg" alt="Deaf Image 9" style={styles.img} />
+          <img src="/deaf9.jpg" alt="Community engagement" style={styles.img} />
         </div>
       </div>
 
@@ -153,7 +160,7 @@ const Deaf = () => {
       {/* New Section with deaf29.jpg and deaf30.jpg */}
       <div style={styles.container}>
         <div style={styles.sideImages}>
-          <img src="/deaf29.jpg" alt="Deaf Image 29" style={styles.img} />
+          <img src="/deaf29.jpg" alt="Cultural celebration" style={styles.img} />
         </div>
         <div style={styles.middleParagraph}>
           <p style={styles.paragraph}>
@@ -161,7 +168,7 @@ const Deaf = () => {
           </p>
         </div>
         <div style={styles.sideImages}>
-          <img src="/deaf30.jpg" alt="Deaf Image 30" style={styles.img} />
+          <img src="/deaf30.jpg" alt="Event gathering" style={styles.img} />
         </div>
       </div>
 

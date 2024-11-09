@@ -3,8 +3,8 @@ import './index.css'; // Ensure you have this CSS file for additional styles
 
 function StoryDetails2() {
     const [previousUploads, setPreviousUploads] = useState([
-        { id: 1, name: 'Story 1', image: '/image1.png', storyName: 'Story 1', comments: 'This is the first story', liked: false, favorited: false, rating: 3 },
-        { id: 2, name: 'Story 2', image: '/image2.png', storyName: 'Story 2', comments: 'This is the second story', liked: false, favorited: false, rating: 5 },
+        { id: 1, name: 'Story 1', image: '/download.jpeg', storyName: 'Story 1', comments: 'This is the first story', liked: false, favorited: false, rating: 3 },
+        { id: 2, name: 'Story 2', image: '/s.jpeg', storyName: 'Story 2', comments: 'This is the second story', liked: false, favorited: false, rating: 5 },
         { id: 3, name: 'Story 3', image: '/image3.png', storyName: 'Story 3', comments: 'This is the third story', liked: false, favorited: false, rating: 2 },
     ]);
 
